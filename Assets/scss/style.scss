@@ -17,6 +17,13 @@ $font-secondary: 'Roboto Slab', serif;
   }
 }
 
+@mixin icon {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  font-family: $font-secondary;
+}
+
 body {
   font-family: $font-primary;
   color: $color-text-white;
@@ -37,8 +44,12 @@ nav {
     font-family: $font-secondary;
     text-align: right;
   }
-  .phone {
+  a {
     color: $color-blue;
+    &:hover {
+      color: $color-blue-hover;
+      text-decoration: none;
+    }
   }
 }
 
@@ -67,6 +78,45 @@ nav {
 
 .feature {
   @include image-row;
+  &-over {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    & h1 {
+      font-size: 40px;
+      text-decoration: underline;
+      text-align: center;
+      margin: 40px;
+    }
+    & .phone {
+      position: absolute;
+      z-index: 2;
+      width: 20%;
+      height: auto;
+      left: 40%;
+      top: 125px;
+    }
+  }
+  &-left {
+    @include icon;
+    padding: 0px 175px 25px 100px;
+  }
+  &-right {
+    @include icon;
+    padding: 0px 100px 25px 150px;
+  }
+  & .icon {
+    display: block;
+    margin: auto;
+  }
+  & .icon-img {
+    width: 225px;
+    margin-bottom: 20px;
+  }
+  & .descretion {
+    text-align: center;
+    font-size: 12px;
+  }
 }
 
 .about {
