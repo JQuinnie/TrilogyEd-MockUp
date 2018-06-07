@@ -1,0 +1,32 @@
+$color-blue: #38bcdb;
+$color-blue-hover: #2e91a3;
+$color-grey: #a9aaab;
+$color-lightgrey: #dcdcdc;
+
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Roboto Slab', serif;
+
+body {
+  font-family: $font-primary;
+}
+
+nav {
+  background-color: black;
+}
+
+.info {
+  background-image: url("../images/data_hero.jpg");
+}
+.feature {
+  background-image: url("../images/featuring.jpg");
+}
+.story {
+  background-image: url("../images/about.jpg");
+}
+.faq {
+  background-image: url("../images/faq.jpg");
+}
+
+footer {
+  background-color: $color-blue;
+}
