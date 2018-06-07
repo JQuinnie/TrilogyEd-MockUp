@@ -2,23 +2,78 @@ $color-blue: #38bcdb;
 $color-blue-hover: #2e91a3;
 $color-grey: #a9aaab;
 $color-lightgrey: #dcdcdc;
+$color-black: #000000;
+$color-text-white: white;
 
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Slab', serif;
 
 body {
   font-family: $font-primary;
+  color: $color-text-white;
 }
 
 nav {
-  background-color: black;
+  position: relative;
+  background-color: $color-black;
+  height: 100px;
+  opacity: 0.8;
+  img {
+    position: absolute;
+    float: left;
+    left: 100px;
+    top: 10px;
+  }
+  p {
+    font-family: $font-secondary;
+    text-align: right;
+  }
+  .phone {
+    color: $color-blue;
+  }
 }
 
 .info {
-  background-image: url("../images/data_hero.jpg");
+  position: relative;
+  background-color: $color-black;
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+  &-over {
+    float: left;
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 100px;
+  }
+  &-left {
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+    }
+    h4 {
+      font-family: $font-secondary;
+    }
+  }
+
+  &-right {
+    color: $color-blue;
+  }
 }
+
 .feature {
-  background-image: url("../images/featuring.jpg");
+  background: {
+    color: $color-black;
+    image: url("../images/featuring.jpg");
+    position: center center;
+    repeat: no-repeat;
+    attachment: fixed;
+    size: cover;
+  }
+
+  width: 1366px;
+  height: 730px;
 }
 .story {
   background-image: url("../images/about.jpg");

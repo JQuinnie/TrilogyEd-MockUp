@@ -1,14 +1,52 @@
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: white; }
 
 nav {
-  background-color: black; }
+  position: relative;
+  background-color: #000000;
+  height: 100px;
+  opacity: 0.8; }
+  nav img {
+    position: absolute;
+    float: left;
+    left: 100px;
+    top: 10px; }
+  nav p {
+    font-family: "Roboto Slab", serif;
+    text-align: right; }
+  nav .phone {
+    color: #38bcdb; }
 
 .info {
-  background-image: url("../images/data_hero.jpg"); }
+  position: relative;
+  background-color: #000000; }
+  .info img {
+    width: 100%;
+    height: 100%; }
+  .info-over {
+    float: left;
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 100px; }
+  .info-left h1 {
+    font-size: 50px;
+    font-weight: 700; }
+  .info-left h4 {
+    font-family: "Roboto Slab", serif; }
+  .info-right {
+    color: #38bcdb; }
 
 .feature {
-  background-image: url("../images/featuring.jpg"); }
+  background-color: #000000;
+  background-image: url("../images/featuring.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 1366px;
+  height: 730px; }
 
 .story {
   background-image: url("../images/about.jpg"); }
