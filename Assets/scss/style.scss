@@ -71,6 +71,21 @@ nav {
 
 .about {
   @include image-row;
+  &-over {
+    position: absolute;
+    z-index: 1;
+    font-family: $font-secondary;
+    font-size:26px;
+    margin: 60px 60px;
+    text-align: center;
+  }
+  &-title {
+  color: $color-blue;
+  font-family: $font-primary;
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  }
 }
 
 .faq {
