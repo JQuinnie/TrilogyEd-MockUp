@@ -12,7 +12,7 @@ nav {
     float: left;
     left: 100px;
     top: 10px; }
-  nav p {
+  nav section {
     font-family: "Roboto Slab", serif;
     text-align: right; }
   nav a {
@@ -32,14 +32,24 @@ nav {
     position: absolute;
     z-index: 1;
     top: 200px;
-    left: 100px; }
+    left: 100px;
+    width: 85%; }
   .info-left h1 {
     font-size: 50px;
     font-weight: 700; }
   .info-left h4 {
     font-family: "Roboto Slab", serif; }
   .info-right {
-    color: #38bcdb; }
+    color: #38bcdb;
+    text-align: right; }
+    .info-right section {
+      font-size: 18px;
+      color: white; }
+      .info-right section font {
+        font-size: 36px;
+        font-weight: 700; }
+    .info-right-top, .info-right-bottom {
+      margin: 50px auto; }
 
 .feature {
   position: relative;
@@ -68,13 +78,13 @@ nav {
     width: 90%;
     text-align: center;
     font-family: "Roboto Slab", serif;
-    padding: 0px 175px 25px 100px; }
+    padding: 0px 175px 50px 100px; }
   .feature-right {
     position: relative;
     width: 90%;
     text-align: center;
     font-family: "Roboto Slab", serif;
-    padding: 0px 100px 25px 150px; }
+    padding: 0px 100px 50px 150px; }
   .feature .icon {
     display: block;
     margin: auto; }

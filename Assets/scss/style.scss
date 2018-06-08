@@ -40,7 +40,7 @@ nav {
     left: 100px;
     top: 10px;
   }
-  p {
+  section {
     font-family: $font-secondary;
     text-align: right;
   }
@@ -61,6 +61,7 @@ nav {
     z-index: 1;
     top: 200px;
     left: 100px;
+    width: 85%;
   }
   &-left {
     h1 {
@@ -73,6 +74,18 @@ nav {
   }
   &-right {
     color: $color-blue;
+    text-align: right;
+    section {
+      font-size: 18px;
+      color: $color-text-white;
+        font {
+          font-size: 36px;
+          font-weight: 700;
+        }
+    }
+    &-top, &-bottom {
+      margin: 50px auto;
+    }
   }
 }
 
@@ -99,11 +112,11 @@ nav {
   }
   &-left {
     @include icon;
-    padding: 0px 175px 25px 100px;
+    padding: 0px 175px 50px 100px;
   }
   &-right {
     @include icon;
-    padding: 0px 100px 25px 150px;
+    padding: 0px 100px 50px 150px;
   }
   & .icon {
     display: block;
