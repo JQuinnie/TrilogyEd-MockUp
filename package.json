@@ -1,0 +1,24 @@
+{
+  "name": "trilogyeducation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch Assets/scss -o Assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JQuinnie/TrilogyEd-MockUp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JQuinnie/TrilogyEd-MockUp/issues"
+  },
+  "homepage": "https://github.com/JQuinnie/TrilogyEd-MockUp#readme"
+}
