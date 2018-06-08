@@ -40,16 +40,25 @@ nav {
   .info-left h4 {
     font-family: "Roboto Slab", serif; }
   .info-right {
-    color: #38bcdb;
     text-align: right; }
     .info-right section {
-      font-size: 18px;
+      font-size: 22px;
       color: white; }
-      .info-right section font {
+    .info-right-top {
+      margin: 0px auto 75px auto;
+      padding-bottom: 10px;
+      border-bottom: 5px solid #38bcdb; }
+      .info-right-top font {
+        font-size: 36px;
+        font-weight: 700;
+        color: #38bcdb; }
+    .info-right-bottom {
+      margin: 50px auto 50px auto;
+      padding-bottom: 10px;
+      border-bottom: 5px solid white; }
+      .info-right-bottom font {
         font-size: 36px;
         font-weight: 700; }
-    .info-right-top, .info-right-bottom {
-      margin: 50px auto; }
 
 .feature {
   position: relative;
