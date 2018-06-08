@@ -1,1 +1,1 @@
-# TrilogyEd-MockUp
+# Trilogy Education Services

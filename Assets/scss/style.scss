@@ -120,26 +120,32 @@ nav {
 }
 
 .about {
-  @include image-row;
-  &-over {
-    position: absolute;
-    z-index: 1;
-    font-family: $font-secondary;
-    font-size:26px;
-    margin: 60px 60px;
-    text-align: center;
-  }
-  &-title {
-  color: $color-blue;
-  font-family: $font-primary;
-  font-size: 40px;
-  text-decoration: underline;
-  text-align: center;
-  }
+    background-image: url("../images/about.jpg") no-repeat center center fixed;
+    background-size:cover;
 }
+// .about {
+//   @include image-row;
+//   &-over {
+//     position: relative;
+//     z-index: 1;
+//     font-family: $font-secondary;
+//     font-size:26px;
+//     margin: 60px 60px;
+//     text-align: center;
+//     display: inline-block
+//   }
+//   &-title {
+//   color: $color-blue;
+//   font-family: $font-primary;
+//   font-size: 40px;
+//   text-decoration: underline;
+//   text-align: center;
+//   }
+// }
 
 .faq {
-  @include image-row;
+  background-image: url("../images/faq.jpg") no-repeat center center fixed;
+  background-size:cover;
 }
 
 footer {

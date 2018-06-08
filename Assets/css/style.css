@@ -86,31 +86,12 @@ nav {
     font-size: 12px; }
 
 .about {
-  position: relative;
-  background-color: #000000; }
-  .about img {
-    width: 100%;
-    height: 100%; }
-  .about-over {
-    position: absolute;
-    z-index: 1;
-    font-family: "Roboto Slab", serif;
-    font-size: 26px;
-    margin: 60px 60px;
-    text-align: center; }
-  .about-title {
-    color: #38bcdb;
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    text-decoration: underline;
-    text-align: center; }
+  background-image: url("../images/about.jpg") no-repeat center center fixed;
+  background-size: cover; }
 
 .faq {
-  position: relative;
-  background-color: #000000; }
-  .faq img {
-    width: 100%;
-    height: 100%; }
+  background-image: url("../images/faq.jpg") no-repeat center center fixed;
+  background-size: cover; }
 
 footer {
   background-color: #38bcdb; }
