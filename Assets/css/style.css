@@ -23,7 +23,8 @@ nav {
 
 .info {
   position: relative;
-  background-color: #000000; }
+  background-color: white;
+  z-index: -1; }
   .info img {
     width: 100%;
     height: 100%; }
@@ -92,7 +93,8 @@ nav {
 
 .feature {
   position: relative;
-  background-color: #000000; }
+  background-color: white;
+  z-index: -1; }
   .feature img {
     width: 100%;
     height: 100%; }
@@ -136,7 +138,8 @@ nav {
 
 .about {
   position: relative;
-  background-color: #000000; }
+  background-color: white;
+  z-index: -1; }
   .about img {
     width: 100%;
     height: 100%; }
@@ -156,10 +159,43 @@ nav {
 
 .faq {
   position: relative;
-  background-color: #000000; }
+  background-color: white;
+  z-index: -1; }
   .faq img {
     width: 100%;
     height: 100%; }
+  .faq-over {
+    position: absolute;
+    z-index: 1;
+    margin: 40px 100px; }
+  .faq-title {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center; }
+  .faq #accordion {
+    font-family: "Roboto Slab", serif;
+    color: #000000; }
+    .faq #accordion .card {
+      background-color: transparent;
+      border: none;
+      max-width: 100%; }
+    .faq #accordion .card-header {
+      padding: 0px;
+      width: 90%;
+      border: none;
+      background-color: transparent; }
+    .faq #accordion .btn {
+      color: #000000;
+      background-color: transparent;
+      white-space: normal;
+      text-align: left;
+      font-size: 18px; }
+
+.spacer {
+  height: 80px;
+  width: 100%; }
 
 footer {
   background-color: #38bcdb; }

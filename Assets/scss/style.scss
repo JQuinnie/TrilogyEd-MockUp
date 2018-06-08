@@ -10,7 +10,8 @@ $font-secondary: 'Roboto Slab', serif;
 
 @mixin image-row {
   position: relative;
-  background-color: $color-black;
+  background-color: $color-text-white;
+  z-index: -1;
   & img {
     width: 100%;
     height: 100%;
@@ -199,6 +200,45 @@ nav {
 
 .faq {
   @include image-row;
+  &-over {
+    position: absolute;
+    z-index: 1;
+    margin: 40px 100px;;
+  }
+  &-title {
+    color: $color-black;
+    font-family: $font-primary;
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  #accordion {
+    font-family: $font-secondary;
+    color: $color-black;
+    .card {
+      background-color: transparent;
+      border: none;
+      max-width: 100%;
+    }
+    .card-header {
+      padding: 0px;
+      width: 90%;
+      border: none;
+      background-color: transparent;
+    }
+    .btn {
+      color: $color-black;
+      background-color: transparent;
+      white-space: normal;
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+}
+
+.spacer {
+  height: 80px;
+  width: 100%;
 }
 
 footer {
