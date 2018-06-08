@@ -120,8 +120,15 @@ nav {
 }
 
 .about {
-    background-image: url("../images/about.jpg") no-repeat center center fixed;
-    background-size:cover;
+  width: 100%;
+  height: auto;
+  &-over {
+    background-image: url("../images/about.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: block;
+    padding-top: 363.297%;
+  }
 }
 // .about {
 //   @include image-row;
