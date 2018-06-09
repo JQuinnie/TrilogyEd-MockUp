@@ -186,9 +186,11 @@ nav {
       max-width: 100%; }
     .faq #accordion .card-header {
       padding: 0px;
-      width: 90%;
+      width: 100%;
       border: none;
       background-color: transparent; }
+      .faq #accordion .card-header button {
+        width: 100%; }
     .faq #accordion .btn {
       color: #000000;
       background-color: transparent;

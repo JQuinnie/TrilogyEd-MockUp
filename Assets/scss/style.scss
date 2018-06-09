@@ -230,9 +230,12 @@ nav {
     }
     .card-header {
       padding: 0px;
-      width: 90%;
+      width: 100%;
       border: none;
       background-color: transparent;
+      button {
+        width: 100%;
+      }
     }
     .btn {
       color: $color-black;
