@@ -19,7 +19,8 @@ nav {
     top: 10px; }
   nav section {
     font-family: "Roboto Slab", serif;
-    text-align: right; }
+    text-align: right;
+    padding-right: 100px; }
   nav a {
     color: #38bcdb; }
     nav a:hover {
