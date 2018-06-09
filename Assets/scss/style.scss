@@ -26,11 +26,13 @@ $font-secondary: 'Roboto Slab', serif;
 
 .container-fluid {
   padding: 0px;
+  width: 100%;
 }
 
 body {
   font-family: $font-primary;
   color: $color-text-white;
+  background-color: #a1ecee;
 }
 
 nav {
@@ -80,13 +82,17 @@ nav {
       form {
         position: relative;
         z-index: 2;
-        height: 200px;
+        height: 250px;
         width: 450px;
         color: $color-black;
         background: rgba( 255, 255, 255, 0.7);
         text-align: center;
         border-radius: 5px;
         padding: 20px;
+        .form-row {
+          width: 100%;
+          text-align: center;
+        }
         h1 {
           font-size: 32px;
         }

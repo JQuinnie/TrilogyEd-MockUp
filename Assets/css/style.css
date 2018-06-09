@@ -1,9 +1,11 @@
 .container-fluid {
-  padding: 0px; }
+  padding: 0px;
+  width: 100%; }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: white; }
+  color: white;
+  background-color: #a1ecee; }
 
 nav {
   position: relative;
@@ -47,13 +49,16 @@ nav {
     .info-left-bottom form {
       position: relative;
       z-index: 2;
-      height: 200px;
+      height: 250px;
       width: 450px;
       color: #000000;
       background: rgba(255, 255, 255, 0.7);
       text-align: center;
       border-radius: 5px;
       padding: 20px; }
+      .info-left-bottom form .form-row {
+        width: 100%;
+        text-align: center; }
       .info-left-bottom form h1 {
         font-size: 32px; }
       .info-left-bottom form .form-control {
