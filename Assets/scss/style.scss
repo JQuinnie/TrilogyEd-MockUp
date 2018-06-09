@@ -10,8 +10,7 @@ $font-secondary: 'Roboto Slab', serif;
 
 @mixin image-row {
   position: relative;
-  background-color: $color-text-white;
-  z-index: -1;
+  background-color: #a1ecee;
   & img {
     width: 100%;
     height: 100%;
@@ -23,6 +22,10 @@ $font-secondary: 'Roboto Slab', serif;
   width: 90%;
   text-align: center;
   font-family: $font-secondary;
+}
+
+.container-fluid {
+  padding: 0px;
 }
 
 body {
@@ -75,11 +78,12 @@ nav {
     &-bottom {
       padding-top: 20px;
       form {
+        position: relative;
+        z-index: 2;
         height: 200px;
         width: 450px;
         color: $color-black;
-        background-color: $color-text-white;
-        opacity: 0.8;
+        background: rgba( 255, 255, 255, 0.7);
         text-align: center;
         border-radius: 5px;
         padding: 20px;
@@ -91,6 +95,7 @@ nav {
           text-align: center;
           font-size: 24px;
           padding: .25rem .50rem;
+          background: rgba( 255, 255, 255, 0);
           border: none;
           border-radius: 0px;
           border-bottom: 2px solid black;
@@ -98,16 +103,19 @@ nav {
       button {
         width: 100%;
         position: relative;
-        background-color: $color-blue;
+        background: rgba(56, 188, 219, 1.0);
         border: 0px;
         font-size: 32px;
         font-weight: 700;
         font-family: $font-primary;
         padding: .25rem .50rem;
-      }
+        &:hover {
+          background-color: $color-blue-hover;
+        }
       }
     }
   }
+}
   &-right {
     text-align: right;
     section {
@@ -236,11 +244,14 @@ nav {
   }
 }
 
-.spacer {
-  height: 80px;
-  width: 100%;
-}
-
-footer {
-  background-color: $color-blue;
+.footer {
+  background-color: #a1ecee;
+  font-family: $font-secondary;
+  color: $color-black;
+  max-width: 100%;
+  height: 200px;
+  padding: 25px 100px;
+  &-right {
+    text-align: right;
+  }
 }

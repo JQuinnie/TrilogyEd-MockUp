@@ -1,3 +1,6 @@
+.container-fluid {
+  padding: 0px; }
+
 body {
   font-family: "Roboto", sans-serif;
   color: white; }
@@ -23,8 +26,7 @@ nav {
 
 .info {
   position: relative;
-  background-color: white;
-  z-index: -1; }
+  background-color: #a1ecee; }
   .info img {
     width: 100%;
     height: 100%; }
@@ -43,11 +45,12 @@ nav {
   .info-left-bottom {
     padding-top: 20px; }
     .info-left-bottom form {
+      position: relative;
+      z-index: 2;
       height: 200px;
       width: 450px;
       color: #000000;
-      background-color: white;
-      opacity: 0.8;
+      background: rgba(255, 255, 255, 0.7);
       text-align: center;
       border-radius: 5px;
       padding: 20px; }
@@ -58,18 +61,21 @@ nav {
         text-align: center;
         font-size: 24px;
         padding: .25rem .50rem;
+        background: rgba(255, 255, 255, 0);
         border: none;
         border-radius: 0px;
         border-bottom: 2px solid black; }
       .info-left-bottom form button {
         width: 100%;
         position: relative;
-        background-color: #38bcdb;
+        background: #38bcdb;
         border: 0px;
         font-size: 32px;
         font-weight: 700;
         font-family: "Roboto", sans-serif;
         padding: .25rem .50rem; }
+        .info-left-bottom form button:hover {
+          background-color: #2e91a3; }
   .info-right {
     text-align: right; }
     .info-right section {
@@ -93,8 +99,7 @@ nav {
 
 .feature {
   position: relative;
-  background-color: white;
-  z-index: -1; }
+  background-color: #a1ecee; }
   .feature img {
     width: 100%;
     height: 100%; }
@@ -138,8 +143,7 @@ nav {
 
 .about {
   position: relative;
-  background-color: white;
-  z-index: -1; }
+  background-color: #a1ecee; }
   .about img {
     width: 100%;
     height: 100%; }
@@ -159,8 +163,7 @@ nav {
 
 .faq {
   position: relative;
-  background-color: white;
-  z-index: -1; }
+  background-color: #a1ecee; }
   .faq img {
     width: 100%;
     height: 100%; }
@@ -193,9 +196,12 @@ nav {
       text-align: left;
       font-size: 18px; }
 
-.spacer {
-  height: 80px;
-  width: 100%; }
-
-footer {
-  background-color: #38bcdb; }
+.footer {
+  background-color: #a1ecee;
+  font-family: "Roboto Slab", serif;
+  color: #000000;
+  max-width: 100%;
+  height: 200px;
+  padding: 25px 100px; }
+  .footer-right {
+    text-align: right; }
