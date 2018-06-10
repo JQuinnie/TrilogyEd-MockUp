@@ -9,7 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch Assets/scss -o Assets/css"
+    "scss": "node-sass --watch Assets/scss -o Assets/css",
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js'"
   },
   "repository": {
     "type": "git",
