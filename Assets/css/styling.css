@@ -232,6 +232,7 @@ body {
     .item-info {
       background-image: url("../mobile/code_mobile_hero.jpg");
       background-position: 0px 175px;
+      grid-template-rows: 175px 310px;
       height: 485px; }
       .item-info .info-nav {
         height: 175px; }
@@ -243,10 +244,23 @@ body {
           padding: 0px; }
       .item-info .info-top-left {
         margin: 0px;
-        padding: 0px; }
+        padding: 0px;
+        align-self: center;
+        text-align: center; }
+        .item-info .info-top-left h1 {
+          font-size: 32px; }
+        .item-info .info-top-left h4 {
+          font-size: 20px;
+          margin: 0px 35px 0px 35px;
+          padding-bottom: 20px;
+          border-bottom: 5px solid #38bcdb; }
       .item-info .info-top-right, .item-info .info-bottom-right {
         visibility: hidden; }
       .item-info .info-hidden {
         visibility: visible;
-        grid-row: 3;
-        color: white; } }
+        padding: 0px 30px 0px 30px;
+        color: white;
+        font-size: 20px;
+        text-align: center; }
+      .item-info .info-bottom-left {
+        visibility: hidden; } }
