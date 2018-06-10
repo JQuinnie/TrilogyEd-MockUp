@@ -15,14 +15,12 @@ body {
 }
 
 .container-fluid {
-  border: 2px solid red;
   padding: 0px;
   display: grid;
   grid-template-rows: auto;
 }
 
 .item {
-  border: 1px solid red;
 
   &-info {
     display: grid;
@@ -147,12 +145,65 @@ body {
   }
 
   &-feature {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: auto 1fr 1fr;
     background-image: url("../images/featuring.jpg");
     background-size: 100%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     height: 640px;
+
+    .icon-img {
+      width: 225px;
+    }
+
+    .feature-title {
+      grid-column: span 3;
+      justify-self: center;
+      padding-top: 20px;
+      height: 100px;
+
+      font {
+        font-size: 40px;
+        text-decoration: underline;
+      }
+    }
+
+    .feature-box {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+      text-align: center;
+      font-family: $font-secondary;
+
+      &-row {
+        text-align: center;
+        // &-top {
+        //   padding-top: 50px;
+        // }
+        &-bottom {
+          padding: 20px 75px;
+          height: 125px;
+        }
+      }
+    }
+
+    .feature-spacer {
+      grid-row: span 2;
+      .phone {
+        width: 300px;
+        height: 438px
+      }
+    }
+
+    .feature-footer {
+      grid-column: span 3;
+      justify-self: center;
+      padding-top: 20px;
+      height: 100px;
+    }
   }
 
   &-about {
@@ -173,6 +224,7 @@ body {
       font-family: $font-secondary;
 
       font {
+        font-family: $font-primary;
         color: $color-blue;
         font-size: 40px;
         text-decoration: underline;
@@ -250,5 +302,3 @@ body {
       }
   }
 }
-
-
