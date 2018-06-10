@@ -11,7 +11,7 @@ $font-secondary: 'Roboto Slab', serif;
 body {
   font-family: $font-primary;
   color: $color-text-white;
-  background-color: #a1ecee;
+  background-color: #89D6EA;
 }
 
 .container-fluid {
@@ -156,15 +156,15 @@ body {
   }
 
   &-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("../images/about.jpg");
     background-size: 100%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     height: 376px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     .about-story {
       text-align: center;
@@ -181,12 +181,53 @@ body {
   }
 
   &-faq {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
     background-image: url("../images/faq.jpg");
     background-size: 100%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     height: 550px;
+
+    .faq-info {
+      padding-top: 25px;
+      padding-left: 125px;
+    }
+
+    font {
+      color: $color-black;
+      font-family: $font-primary;
+      font-size: 40px;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    #accordion {
+      font-family: $font-secondary;
+      color: $color-black;
+      .card {
+        background-color: transparent;
+        border: none;
+        max-width: 100%;
+      }
+      .card-header {
+        padding: 0px;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        button {
+          width: 100%;
+        }
+      }
+      .btn {
+        color: $color-black;
+        background-color: transparent;
+        white-space: normal;
+        text-align: left;
+        font-size: 18px;
+      }
+    }
   }
 
   &-footer {
