@@ -1,6 +1,6 @@
 # Trilogy Education Service Website Mock-Up
 
-Front end web development of the Trilogy Education Service mock-up website @1366px wide view, including design and graphic match-ups.
+Front-end web development of the Trilogy Education Service mock-up website @1366px wide view rapidly deployed, including design and graphic match-ups.
 
 ## Technologies Used:
 * HTML/CSS
