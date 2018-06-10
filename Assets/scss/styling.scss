@@ -116,6 +116,35 @@ body {
         }
       }
     }
+
+    .info-top-right, .info-bottom-right {
+      text-align: right;
+      align-self: center;
+      section {
+        font-size: 22px;
+
+        color: $color-text-white;
+        margin-right: 125px;
+      }
+      .info-coding {
+        border-bottom: 5px solid $color-blue;
+        margin-left: 75px;
+        padding-left: 50px;
+        font {
+          font-size: 36px;
+          font-weight: 700;
+          color: $color-blue;
+        }
+      }
+      .info-data {
+        border-bottom: 5px solid $color-text-white;
+        margin-left: 125px;
+        font {
+          font-size: 36px;
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   &-feature {

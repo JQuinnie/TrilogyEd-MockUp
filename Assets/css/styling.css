@@ -81,6 +81,27 @@ body {
           padding: .25rem .50rem; }
           .item-info .info-bottom-left form button:hover {
             background-color: #2e91a3; }
+    .item-info .info-top-right, .item-info .info-bottom-right {
+      text-align: right;
+      align-self: center; }
+      .item-info .info-top-right section, .item-info .info-bottom-right section {
+        font-size: 22px;
+        color: white;
+        margin-right: 125px; }
+      .item-info .info-top-right .info-coding, .item-info .info-bottom-right .info-coding {
+        border-bottom: 5px solid #38bcdb;
+        margin-left: 75px;
+        padding-left: 50px; }
+        .item-info .info-top-right .info-coding font, .item-info .info-bottom-right .info-coding font {
+          font-size: 36px;
+          font-weight: 700;
+          color: #38bcdb; }
+      .item-info .info-top-right .info-data, .item-info .info-bottom-right .info-data {
+        border-bottom: 5px solid white;
+        margin-left: 125px; }
+        .item-info .info-top-right .info-data font, .item-info .info-bottom-right .info-data font {
+          font-size: 36px;
+          font-weight: 700; }
   .item-feature {
     background-image: url("../images/featuring.jpg");
     background-size: 100%;
