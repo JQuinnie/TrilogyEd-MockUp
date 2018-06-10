@@ -372,5 +372,82 @@ body {
         visibility: hidden;
       }
     }
+
+    &-feature {
+      background-image: url("../mobile/featuring_mobile.jpg");
+      height: 1265px;
+      grid-template-columns: 480px;
+      grid-template-rows: 1fr 6fr 4fr 4fr 2fr 4fr 1fr;
+
+      .icon-img {
+        width: 200px;
+
+      }
+
+      .feature {
+
+        &-box {
+          align-self: center;
+          margin: 10px;
+          font-size: 14px;
+
+          &-row-bottom {
+            padding: 10px 60px;
+            height: 100px;
+          }
+        }
+
+        &-title {
+          grid-row: 1;
+          grid-column: span 1;
+        }
+
+        &-spacer {
+          grid-row: 2;
+          grid-row: span 1;
+          .phone {
+            width: 200px;
+            height: 292px;
+          }
+        }
+
+        &-top-left {
+          grid-row: 3;
+        }
+
+        &-bottom-left {
+          grid-row: 4;
+        }
+
+        &-top-right {
+          grid-row: 5;
+          height: 150px;
+        }
+
+        &-bottom-right {
+          grid-row: 6;
+        }
+
+        &-footer {
+          grid-row: 7;
+          grid-column: span 1;
+          text-align: center;
+          font-size: 12px;
+          padding: 10px 70px;
+          height: 75px;
+        }
+      }
+    }
+
+    &-about {
+      background-image: url("../mobile/about_mobile.jpg");
+      height: 605px;
+
+    }
+
+    &-faq {
+      background-image: url("../mobile/fap_mobile.jpg");
+      height: 965px;
+    }
   }
 }
