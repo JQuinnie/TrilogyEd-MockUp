@@ -41,7 +41,6 @@ body {
 
     .info-nav {
       display: grid;
-      border: 1px solid blue;
       grid-template-columns: 1fr 1fr;
       grid-column-start: span 2;
       background-color: rgba(0, 0, 0, .8);
@@ -191,7 +190,23 @@ body {
   }
 
   &-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 200px;
+
+    .footer-logo {
+      align-self: center;
+      padding-left: 100px;
+      }
+
+    .footer-info {
+      color: $color-black;
+      font-family: $font-secondary;
+      justify-self: end;
+      align-self: center;
+      text-align: right;
+      padding-right: 125px;
+      }
   }
 }
 

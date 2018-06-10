@@ -23,7 +23,6 @@ body {
     height: 730px; }
     .item-info .info-nav {
       display: grid;
-      border: 1px solid blue;
       grid-template-columns: 1fr 1fr;
       grid-column-start: span 2;
       background-color: rgba(0, 0, 0, 0.8);
@@ -136,4 +135,16 @@ body {
     -moz-background-size: cover;
     height: 550px; }
   .item-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 200px; }
+    .item-footer .footer-logo {
+      align-self: center;
+      padding-left: 100px; }
+    .item-footer .footer-info {
+      color: #000000;
+      font-family: "Roboto Slab", serif;
+      justify-self: end;
+      align-self: center;
+      text-align: right;
+      padding-right: 125px; }
