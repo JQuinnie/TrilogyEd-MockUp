@@ -115,7 +115,19 @@ body {
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    height: 376px; }
+    height: 376px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .item-about .about-story {
+      text-align: center;
+      margin: auto 100px;
+      font-size: 24px;
+      font-family: "Roboto Slab", serif; }
+      .item-about .about-story font {
+        color: #38bcdb;
+        font-size: 40px;
+        text-decoration: underline; }
   .item-faq {
     background-image: url("../images/faq.jpg");
     background-size: 100%;

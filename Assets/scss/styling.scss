@@ -163,6 +163,22 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     height: 376px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-story {
+      text-align: center;
+      margin: auto 100px;
+      font-size: 24px;
+      font-family: $font-secondary;
+
+      font {
+        color: $color-blue;
+        font-size: 40px;
+        text-decoration: underline;
+      }
+    }
   }
 
   &-faq {
