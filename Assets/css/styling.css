@@ -33,12 +33,15 @@ body {
       font-size: 18px;
       align-self: center;
       text-align: right;
+      padding-left: 200px;
       padding-right: 100px; }
       .item-info .info-nav-info a {
         color: #38bcdb;
         font-weight: 700; }
         .item-info .info-nav-info a:hover {
           color: #2e91a3; }
+  .item-info .info-hidden {
+    visibility: hidden; }
   .item-info .info-top-left {
     width: 450px;
     justify-self: center;
@@ -222,3 +225,28 @@ body {
     align-self: center;
     text-align: right;
     padding-right: 125px; }
+
+@media screen and (max-width: 480px) {
+  .item {
+    border: 1px solid red; }
+    .item-info {
+      background-image: url("../mobile/code_mobile_hero.jpg");
+      background-position: 0px 175px;
+      height: 485px; }
+      .item-info .info-nav {
+        height: 175px; }
+        .item-info .info-nav-logo {
+          grid-row: 2;
+          align-self: center; }
+        .item-info .info-nav-info {
+          font-size: 16px;
+          padding: 0px; }
+      .item-info .info-top-left {
+        margin: 0px;
+        padding: 0px; }
+      .item-info .info-top-right, .item-info .info-bottom-right {
+        visibility: hidden; }
+      .item-info .info-hidden {
+        visibility: visible;
+        grid-row: 3;
+        color: white; } }

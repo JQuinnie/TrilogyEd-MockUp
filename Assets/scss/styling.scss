@@ -55,6 +55,7 @@ body {
         font-size: 18px;
         align-self: center;
         text-align: right;
+        padding-left: 200px;
         padding-right: 100px;
 
         a {
@@ -65,6 +66,10 @@ body {
           }
         }
       }
+    }
+
+    .info-hidden {
+      visibility: hidden;
     }
 
     .info-top-left {
@@ -309,5 +314,42 @@ body {
       text-align: right;
       padding-right: 125px;
       }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .item {
+    border: 1px solid red;
+
+    &-info {
+      background-image: url("../mobile/code_mobile_hero.jpg");
+      background-position: 0px 175px;
+      height: 485px;
+
+      .info-nav {
+        height: 175px;
+        &-logo {
+          grid-row: 2;
+          align-self: center;
+        }
+        &-info {
+          font-size: 16px;
+          padding: 0px;
+        }
+      }
+      .info-top-left {
+        margin: 0px;
+        padding: 0px;
+      }
+      .info-top-right, .info-bottom-right {
+        visibility: hidden;
+      }
+      .info-hidden {
+        visibility: visible;
+        grid-row: 3;
+        color: $color-text-white
+      }
+    }
   }
 }
