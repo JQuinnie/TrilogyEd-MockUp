@@ -152,9 +152,7 @@ body {
     height: 100px; }
 
 .item-about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
   background-image: url("../images/about.jpg");
   background-size: 100%;
   background-size: cover;
@@ -228,20 +226,25 @@ body {
 
 @media screen and (max-width: 480px) {
   .item {
-    border: 1px solid red; }
+    grid-template-columns: 1fr; }
     .item-info {
       background-image: url("../mobile/code_mobile_hero.jpg");
       background-position: 0px 175px;
+      grid-template-columns: 1fr;
       grid-template-rows: 175px 310px;
       height: 485px; }
       .item-info .info-nav {
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+        background-color: black;
         height: 175px; }
         .item-info .info-nav-logo {
           grid-row: 2;
           align-self: center; }
         .item-info .info-nav-info {
           font-size: 16px;
-          padding: 0px; }
+          padding: 0px;
+          text-align: center; }
       .item-info .info-top-left {
         margin: 0px;
         padding: 0px;
@@ -267,7 +270,7 @@ body {
     .item-feature {
       background-image: url("../mobile/featuring_mobile.jpg");
       height: 1265px;
-      grid-template-columns: 480px;
+      grid-template-columns: 1fr;
       grid-template-rows: 1fr 6fr 4fr 4fr 2fr 4fr 1fr; }
       .item-feature .icon-img {
         width: 200px; }
@@ -305,7 +308,28 @@ body {
         height: 75px; }
     .item-about {
       background-image: url("../mobile/about_mobile.jpg");
-      height: 605px; }
+      height: 605px;
+      grid-template-columns: 1fr; }
+      .item-about .about-story {
+        margin: 50px; }
     .item-faq {
       background-image: url("../mobile/fap_mobile.jpg");
-      height: 965px; } }
+      height: 965px;
+      grid-template-columns: 1fr; }
+      .item-faq .faq-info {
+        margin: 50px;
+        padding: 0px;
+        text-align: center; }
+      .item-faq #accordion .card-body {
+        text-align: left; }
+    .item-footer {
+      grid-template-columns: 1fr;
+      height: 400px; }
+      .item-footer .footer-logo {
+        height: 190px;
+        padding: 20px 50px; }
+      .item-footer .footer-info {
+        text-align: center;
+        justify-self: center;
+        height: 210px;
+        padding: 0px; } }

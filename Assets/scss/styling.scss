@@ -221,9 +221,7 @@ body {
   }
 
   &-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     background-image: url("../images/about.jpg");
     background-size: 100%;
     background-size: cover;
@@ -320,16 +318,21 @@ body {
 
 @media screen and (max-width: 480px) {
   .item {
-    border: 1px solid red;
+    grid-template-columns: 1fr;
 
     &-info {
       background-image: url("../mobile/code_mobile_hero.jpg");
       background-position: 0px 175px;
+      grid-template-columns: 1fr;
       grid-template-rows: 175px 310px;
       height: 485px;
 
       .info-nav {
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+        background-color: rgba(0, 0, 0, 1);
         height: 175px;
+
         &-logo {
           grid-row: 2;
           align-self: center;
@@ -337,6 +340,7 @@ body {
         &-info {
           font-size: 16px;
           padding: 0px;
+          text-align: center;
         }
       }
 
@@ -376,7 +380,7 @@ body {
     &-feature {
       background-image: url("../mobile/featuring_mobile.jpg");
       height: 1265px;
-      grid-template-columns: 480px;
+      grid-template-columns: 1fr;
       grid-template-rows: 1fr 6fr 4fr 4fr 2fr 4fr 1fr;
 
       .icon-img {
@@ -442,12 +446,43 @@ body {
     &-about {
       background-image: url("../mobile/about_mobile.jpg");
       height: 605px;
+      grid-template-columns: 1fr;
 
+      .about-story {
+        margin: 50px;
+      }
     }
 
     &-faq {
       background-image: url("../mobile/fap_mobile.jpg");
       height: 965px;
+      grid-template-columns: 1fr;
+
+      .faq-info {
+        margin: 50px;
+        padding: 0px;
+        text-align: center;
+      }
+      #accordion .card-body {
+        text-align: left;
+      }
+    }
+
+    &-footer {
+      grid-template-columns: 1fr;
+      height: 400px;
+
+      .footer-logo {
+        height: 190px;
+        padding: 20px 50px;
+      }
+
+      .footer-info {
+        text-align: center;
+        justify-self: center;
+        height: 210px;
+        padding: 0px;
+      }
     }
   }
 }
