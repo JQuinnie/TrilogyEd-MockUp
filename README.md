@@ -14,7 +14,7 @@ Front-end web development of the Trilogy Education Service mock-up website @1366
 ## Mock-up Screen Captures:
 | Web Original (@1366px wide)                           | Web Mock-Up (@1366px wide)                          |
 | :---------------------------------------------------: | :-------------------------------------------------: |
-| <img src="Assets/images/originalCap.jpg" width="300"> | <img src="Assets/images/windowCap.png" width="300"> |
+| <img src="Assets/images/originalCap.jpg" width="400"> | <img src="Assets/images/windowCap.png" width="400"> |
 
 | Mobile Original (@480px wide)                        | Mobile Mock-Up (@480ps wide)                        |
 | :--------------------------------------------------: | :-------------------------------------------------: |
