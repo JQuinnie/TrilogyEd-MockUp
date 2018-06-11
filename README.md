@@ -7,9 +7,9 @@ Front-end web development of the Trilogy Education Service mock-up website @1366
 * SASS/SCSS
 * JavaScript/jQuery
 
-## Still Yet To Do:
-* Mock-Up of website @480px wide view
-* Make mobile site responsive
+## Improvements:
+* Make mobile site responsive (between 1366px & 480px)
+* Make form functional
 
 ## Mock-up Screen Captures:
 | Web Original (@1366px wide)                           | Web Mock-Up (@1366px wide)                          |
