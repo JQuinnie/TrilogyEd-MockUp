@@ -2,6 +2,9 @@
 
 Front-end web development of the Trilogy Education Service mock-up website @1366px wide view rapidly deployed, including design and graphic match-ups.
 
+[Trilogy Education Services Mock-Up](https://jquinnie.github.io/TrilogyEducation/ "Trilogy Site Mock-Up")
+
+
 ## Technologies Used:
 * HTML/CSS
 * SASS/SCSS
