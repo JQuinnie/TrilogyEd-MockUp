@@ -7,9 +7,10 @@ body {
   padding: 0px;
   display: grid;
   grid-template-rows: auto; }
-  .container-fluid .info-form {
-    visibility: hidden;
-    height: 0px; }
+
+.info-form {
+  display: none;
+  visibility: hidden; }
 
 .item-info {
   display: grid;
@@ -343,6 +344,7 @@ body {
         padding: 0px; }
   .info-form {
     grid-row: 2;
+    display: block;
     visibility: visible;
     text-align: center; }
     .info-form form {

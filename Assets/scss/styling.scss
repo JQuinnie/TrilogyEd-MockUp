@@ -18,11 +18,11 @@ body {
   padding: 0px;
   display: grid;
   grid-template-rows: auto;
+}
 
-  .info-form {
-    visibility: hidden;
-    height: 0px;
-  }
+.info-form {
+  display: none;
+  visibility: hidden;
 }
 
 .item {
@@ -497,6 +497,7 @@ body {
 
     .info-form {
       grid-row: 2;
+      display: block;
       visibility: visible;
       text-align: center;
       form {
