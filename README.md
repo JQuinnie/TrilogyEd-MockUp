@@ -12,6 +12,10 @@ Front-end web development of the Trilogy Education Service mock-up website @1366
 * Make mobile site responsive
 
 ## Mock-up Screen Captures:
-| Original                                              | Mock-Up                                           |
-| :---------------------------------------------------: | :-----------------------------------------------: |
-| ![Original](Assets/images/originalCap.jpg "Original") | ![Mock-Up](Assets/images/windowCap.png "Mock-Up") |
+| Web Original (@1366px wide)                           | Web Mock-Up (@1366px wide)                          |
+| :---------------------------------------------------: | :-------------------------------------------------: |
+| <img src="Assets/images/originalCap.jpg" width="300"> | <img src="Assets/images/windowCap.png" width="300"> |
+
+| Mobile Original (@480px wide)                        | Mobile Mock-Up (@480ps wide)                        |
+| :--------------------------------------------------: | :-------------------------------------------------: |
+| <img src="Assets/images/mobileOCap.jpg" width="200"> | <img src="Assets/images/mobileCap.png" width="200"> |
