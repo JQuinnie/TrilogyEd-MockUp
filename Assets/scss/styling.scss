@@ -18,6 +18,11 @@ body {
   padding: 0px;
   display: grid;
   grid-template-rows: auto;
+
+  .info-form {
+    visibility: hidden;
+    height: 0px;
+  }
 }
 
 .item {
@@ -193,10 +198,6 @@ body {
       font-family: $font-secondary;
 
       &-row {
-        text-align: center;
-        // &-top {
-        //   padding-top: 50px;
-        // }
         &-bottom {
           padding: 20px 75px;
           height: 125px;
@@ -321,8 +322,9 @@ body {
     grid-template-columns: 1fr;
 
     &-info {
+      grid-row: 1;
       background-image: url("../mobile/code_mobile_hero.jpg");
-      background-position: 0px 175px;
+      background-position: 0px 150px;
       grid-template-columns: 1fr;
       grid-template-rows: 175px 310px;
       height: 485px;
@@ -331,11 +333,14 @@ body {
         grid-template-columns: 1fr;
         grid-column: span 1;
         background-color: rgba(0, 0, 0, 1);
-        height: 175px;
+        height: 150px;
 
         &-logo {
           grid-row: 2;
           align-self: center;
+          img {
+            height: 100px;
+          }
         }
         &-info {
           font-size: 16px;
@@ -378,6 +383,7 @@ body {
     }
 
     &-feature {
+      grid-row: 3;
       background-image: url("../mobile/featuring_mobile.jpg");
       height: 1265px;
       grid-template-columns: 1fr;
@@ -444,6 +450,7 @@ body {
     }
 
     &-about {
+      grid-row: 4;
       background-image: url("../mobile/about_mobile.jpg");
       height: 605px;
       grid-template-columns: 1fr;
@@ -454,6 +461,7 @@ body {
     }
 
     &-faq {
+      grid-row: 5;
       background-image: url("../mobile/fap_mobile.jpg");
       height: 965px;
       grid-template-columns: 1fr;
@@ -469,12 +477,13 @@ body {
     }
 
     &-footer {
+      grid-row: 6;
       grid-template-columns: 1fr;
       height: 400px;
 
       .footer-logo {
         height: 190px;
-        padding: 20px 50px;
+        padding: 25px 50px;
       }
 
       .footer-info {
@@ -485,4 +494,47 @@ body {
       }
     }
   }
+
+    .info-form {
+      grid-row: 2;
+      visibility: visible;
+      text-align: center;
+      form {
+        height: 250px;
+        // width: 450px;
+        color: $color-black;
+        background: white;
+        border-radius: 5px;
+        padding: 20px;
+        .form-row {
+          width: 100%;
+        }
+        h1 {
+          font-size: 32px;
+          font-weight: 700;
+        }
+        .form-control {
+          color: $color-black;
+          text-align: center;
+          font-size: 24px;
+          padding: .25rem .50rem;
+          background: rgba( 255, 255, 255, 0);
+          border: none;
+          border-radius: 0px;
+          border-bottom: 2px solid black;
+        }
+        button {
+        width: 100%;
+        background: rgba(56, 188, 219, 1.0);
+        border: 0px;
+        font-size: 32px;
+        font-weight: 700;
+        font-family: $font-primary;
+        padding: .25rem .50rem;
+          &:hover {
+            background-color: $color-blue-hover;
+          }
+        }
+      }
+    }
 }
